@@ -35,12 +35,12 @@ nav a {
 }
 
 nav li.active a {
-    background: #cabfb4;
-    color: #4e0333;
+    background: #333;
+    color: white;
 }
 
 nav li a:hover {
-    background: #333;
+    background-color: #333;
     color: #f66009;
 }
 /* main stuff here*/
