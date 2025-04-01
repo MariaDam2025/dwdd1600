@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Maria Damiano">
+    <meta name="description" content="Things to love about halloween">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jolly+Lodger&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="horror.css">
+    <title>Halloween</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+    <!-- start the page head -->
+    <header>
+        <img src="images/logo.png" alt="site logo" width="100" height="99">
+        <div>
+        <span>History of Halloween</span>
+        <p>Order Here</p>
+        </div>
+    </header>
+
+    <!-- start the page navigation -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Halloween</a></li>
+            <li><a href="halloween.html">Halloween Movies</a></li>
+            <li ><a href="aboutus.html">About The Costumes</a></li>
+            <li><a href="costumes.html">Costumes</a></li>
+            <li class="active"><a href="costumesorder.html">Order a Costume</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+
+    </nav>
+    <!-- start the main content -->
+    <main>
+        <h1>Order a Costume</h1>
+        <form method="get" class="myForm" action="ordercomplete.html">
+
+        <fieldset>
+            <legend>Costume Selection</legend>
+            <select name="costume" >
+            <option value="select">Select a Costume</option>
+            <option value="amityville">George Lutz-Amityville </option>
+            <option value="beetlejuice">Bob-shrunken-head</option>
+            <option value="conjuring">Nun-Conjuring</option>
+            <option value="exorcist">Regan-Exorcist</option>
+            <option value="mothman">Mothman</option>
+            <option value="nosferatu">Nosferatu</option></select>
+        </fieldset>
+
+        <fieldset> 
+        <legend>Costume Information</legend>
+       
+        <label>Email* <input type="email" name="email" required></label>
+        <label>First Name* <input type="text" name="fname" required></label>
+        <label>Last Name* <input type="text" name="lname" required></label>
+        <label>Phone* <input type="tel" name="phone" required placeholder="000-000-0000"></label> 
+    </fieldset>
+
+     <fieldset>
+        <legend>Delivery</legend>
+             <label><input type="checkbox" name="pickup" value="pickup" >Store Pickup </label>
+             <label><input type="checkbox" name="pobox" value="PObox" >PO Box</label>
+             <label><input type="checkbox" name="home" value="delivery" >Home Address </label>
+            <label>Street Address* <input type="text" name="street" required></label>
+            <label>Apartment, suite, ect.(optional)<input type="text" name="living"></label>
+            <label>City* <input type="text" name="city" required></label>
+            <label>State* <input type="text" name="state" required></label>
+            <label>Zip Code* <input type="text" name="zip" required></label>
+        </fieldset>
+
+     <fieldset>
+        <legend>Delivery Options</legend>
+            <label><input type="radio" name="method" value="standard"> Standard 5-8 Business Days- No extra charge</label>
+            <label><input type="radio" name="method" value="Express"> Express Delivery 2-3 Business Days- $15</label>
+            <label><input type="radio" name="method" value="overnight"> Overnight Delivery 1-2 Business Day- $25</label>
+        </fieldset>
+        <fieldset>
+            <legend> Payment</legend>
+            <label>Card Number* <input type="text" name="card" required></label>
+            <label>Expiration Date* <input type="text" name="exp" required></label>
+            <label>CVV* <input type="text" name="cvv" required></label>
+            <label>Cardholder Name* <input type="text" name="name" required></label>
+        </fieldset>
+       <input type="submit" value="Submit Order">
+    </form>
+
+    </main>
+
+    <!-- start the page footer -->
+    <footer>
+        <p>&copy; 2025 &bull; Maria Damiano &bull; Web Essentials</p>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,269 @@
+body{
+    font-family: "Jolly Lodger", system-ui;  
+    margin: 0;
+}
+
+/* header stuff here */
+header {
+    background: #cabfb4;
+    padding: 1rem 10px;
+    display: flex;
+    align-items: flex-end;
+}
+header div {
+    padding-left: 2vw;
+
+}
+header span{
+    color: #4e0333;
+    font-size: 2rem;
+    font-weight: 700;
+}
+header p {
+    color:#4e0333;
+    padding:0;
+    margin:0;
+}
+
+
+   
+   /* nav stuff here */
+
+
+   /* Small screens */
+@media only screen and (max-width: 600px)  {
+    nav ul {
+        margin: 0;
+        padding: 0 2vw;
+        list-style-type: none;
+    }
+    nav a {
+        display:block;
+        padding: .8rem;
+        text-decoration: none;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+        border-bottom: solid 1px #f66009;
+        color:#4e0333;
+    }
+    nav .active a {
+        background: #4e0333;
+        background-image: linear-gradient( #4e0333,#28051d);
+        color: white;
+    }
+ } 
+    /* end of small  screen*/
+
+
+/* Big screens */
+@media only screen and (min-width: 601px)  {
+    nav {
+        background: #4e0333;
+    }
+    nav ul {
+        margin: 0;
+        padding: 0 10px;
+        list-style: none;
+        display: flex;
+    }
+    nav a {
+        display: block;
+        padding: .83rem 1rem;
+        text-decoration: none;
+        font-size: 1.1rem;
+        color: white;
+        font-weight: 700;
+    }
+    
+    nav li.active a {
+        background: #333;
+        color: white;
+    }
+    
+    nav li a:hover {
+        background-color: #333;
+        color: #f66009;
+    }   
+    
+}/* end of big screen*/
+
+
+
+/* main stuff here*/
+main {
+    padding: 1rem 10px;
+}
+main h1 {
+    color: #f66009;
+    font-size: 2.5rem;
+}
+
+main h2 {
+    color: #4e0333;
+    margin-bottom: .2rem;
+}
+main ol {
+    color: #034e1e;
+    padding: .5rem 30px;
+    background-color: #cabfb4;
+}
+main p {
+    margin: 0;
+    color:#4e0333
+}
+main dl dt {
+    color: #4e0333;
+    font-weight: 700;
+    margin-left: 20px;
+}
+main ul { 
+    list-style-type: circle;
+}
+main ul li{ 
+    line-height: 125%;
+    margin-bottom: .5rem;
+    font-size: .9rem;
+    color: #4e0333;
+}
+main strong {
+    font-weight: 700;
+    color:#f66009
+}
+main em {
+    font-weight: 300;
+}
+main address {
+    font-style: normal;
+    background-color: #cabfb4;
+    padding: .5rem;
+    border-radius: 10px;
+    border: 1px solid #f66009;
+    width: 200px;
+}
+main a{
+    color:#f66009
+}
+
+.pumpkinwsmoke {
+    width: 100%;
+    margin: 0;
+}
+.pumpkinwsmoke img {
+    width: 100%;
+    height: auto;
+   
+}
+
+
+figure.pumpkin {
+    width: 30%;
+    margin: 0 0 0 2%;
+    float: right;
+}
+figure.pumpkin img {
+    width: 100%;
+   height: auto;
+}
+figure.pumpkin figcaption {
+   text-align: center;
+   font-size: .75rem;
+}
+div.halloweengallery{
+    display:flex;
+    flex-wrap: wrap;
+}
+div.halloweengalleryfigure {
+    margin: .5rem 2% 0 0;
+} 
+div.halloweengallery figcaption {
+    text-align: center;
+    font-size: .8rem;
+    color: #4e0333;
+}
+div.halloweengallery img {
+    width: 100%;
+    height: auto;
+    
+}
+
+div.halloweengallery img:hover {
+    box-shadow: 0px 0px 10px #333;
+}
+
+.myForm fieldset {
+    border: 1px solid #4e0333;
+    border-radius: 3px;
+    margin-bottom: 1rem;}
+.myForm legend {
+    color: #4e0333;
+    font-size: 1.8rem;
+    padding: 0 10px;}
+.myForm label {
+    margin: .5rem;
+}
+.myForm label, .myForm select, .myForm [type=text], .myForm [type=tel], .myForm textarea, .myForm [type=email] {
+    display: block;
+    font-size: 1.2rem;
+    color: #4e0333;}
+.myForm [type=text], .myForm [type=tel], .myForm select, .myForm [type=email], .myForm textarea {
+     border: 1px solid #f66009;
+    padding: .3rem;
+    width: 260px;
+    border-radius: .3rem;
+    font-family: "Jolly Lodger", system-ui;}
+    .myForm textarea {
+        height: 6rem;
+    }
+      
+.myForm [type=submit] {
+           background-color: #cabfb4;
+           padding: 1rem 2rem;
+           border-radius: 10px;
+           color:#4e0333;
+           font-family: "Jolly Lodger", system-ui;
+              font-size: 1.5rem;
+              margin: 1rem 0 0 1vw;
+       }
+table.about-costumes {
+    width: 100%;
+    border-collapse: collapse;
+}
+table.about-costumes th {
+    background-color: #f66009;
+    color: #f7f7f7;
+    text-align: left;
+    padding: .5rem 2vw;
+}
+
+table.about-costumes td {
+    color: #4e0333;
+    padding: .4rem 2vw;
+}
+table.about-costumes tr:nth-child(odd) {
+    background-color: #f7f7f7;
+}
+table.about-costumes tr:hover {
+    background-color: rgba(78,3,51,0.2);
+}
+
+    
+
+/* footer stuff here */
+footer {
+    background-color: #4e0333;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: .8rem;
+    color: white;
+}
+footer p { 
+    margin: 0;
+    letter-spacing: 3px;
+}
+
+
+header, nav, main, footer {
+    max-width: 64rem;
+    margin: 0 auto;
+}
